@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { SriLogo } from './icons/SriLogo';
 
 const Header: React.FC = () => {
   const menu = [
@@ -13,7 +12,7 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0">
-            <img src="/src/assets/svg/sri-logo.svg" alt="Sri Festival Logo" className="h-10" />
+            <img src="https://www.srifestival.com.br/_nuxt/img/sri-logo.729abab.svg" alt="Sri Festival Logo" className="h-10" />
           </div>
           <nav className="hidden md:flex md:space-x-10">
             {menu.map((link) => (
