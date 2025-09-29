@@ -10,9 +10,9 @@ const Hero: React.FC = () => {
   return (
     <>
       <section
-        className="relative bg-blue-600/50 min-h-screen flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8"
+        className="relative bg-blue-400/50 min-h-screen flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8"
       >
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/70"></div>
         <div className="absolute top-0 left-0 w-full h-full" style={{ backgroundImage: `url('/assets/bg-speakers.png')`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', opacity: 0.5 }}></div>
 
         <div className="relative z-10 text-left max-w-4xl ">

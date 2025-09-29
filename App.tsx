@@ -71,22 +71,18 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // 5. DATA FETCHING WITH MOCK DATA
   useEffect(() => {
     const fetchAllData = async () => {
       try {
         console.log('� Carregando dados mockados do SRI Festival...');
 
-        // Use mock data service instead of API calls
         const { lineup, sponsors, sponsorTypes, organizers } = await mockDataService.getAllData();
 
-        // Process sponsors
         if (sponsors && Array.isArray(sponsors) && sponsorTypes && Array.isArray(sponsorTypes)) {
           const groupedSponsors = groupBySponsorType(sponsorTypes, sponsors);
           setSponsors(groupedSponsors);
         }
 
-        // Process lineup
         if (lineup && Array.isArray(lineup)) {
           const dataLineup = orderByTime(lineup);
           const filtered = lineup.filter((item: LineUpItem) =>
@@ -94,7 +90,6 @@ const App = () => {
           );
           setFilteredLineup(filtered);
 
-          // Group lineup by date
           const lineupByDate = dataLineup.reduce((acc: { [key: string]: LineUpItem[] }, item: LineUpItem) => {
             if (!acc[item.date]) {
               acc[item.date] = [];
@@ -112,17 +107,13 @@ const App = () => {
           setLineup(finalLineup);
         }
 
-        // Process organizers
         if (organizers && Array.isArray(organizers)) {
           setOrganizers(organizers);
         }
 
-        console.log('✅ Dados mockados carregados com sucesso!');
-
       } catch (err) {
         console.error('❌ Erro ao carregar dados mockados:', err);
 
-        // Even if there's an error, set empty data to allow the app to load
         setSponsors([]);
         setLineup([]);
         setOrganizers([]);
