@@ -2,7 +2,7 @@ import React from 'react';
 
 const Organizers = ({ organizers = [] }) => {
   return (
-    <div className="pb-25 bg-green-500">
+    <div className="pb-25">
       <div className="container mx-auto">
         <div className="content">
           <h2 className="mb-5 font-bebas text-[#05b7c4] text-[26px] leading-[26px] tracking-wider xl:text-3xl xl:leading-[58px]">

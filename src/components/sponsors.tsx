@@ -4,7 +4,7 @@ import React from 'react';
 // Example structure: [{ id: 1, type: 'Institutional', data: [{ id: 101, sponsor_name: 'Sponsor A', sponsor_image: { id: '...' } }] }]
 const Sponsors = ({ sponsors = [] }) => {
   return (
-    <div className="mt-5 bg-red-500 ">
+    <div className="mt-5 ">
       <div className="container mx-auto">
         <div className="content">
           <h2 className="mb-5 font-bebas text-[#05b7c4] text-[26px] leading-[26px] tracking-wider xl:text-3xl xl:leading-[58px]">
