@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+/* Custom fonts definition */
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('/src/assets/fonts/BebasNeue-Regular.eot');
+  src: url('/src/assets/fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'),
+      url('/src/assets/fonts/BebasNeue-Regular.woff2') format('woff2'),
+      url('/src/assets/fonts/BebasNeue-Regular.woff') format('woff'),
+      url('/src/assets/fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  src: url('/src/assets/fonts/MuseoSans-500.eot');
+  src: url('/src/assets/fonts/MuseoSans-500.eot?#iefix') format('embedded-opentype'),
+      url('/src/assets/fonts/MuseoSans-500.woff2') format('woff2'),
+      url('/src/assets/fonts/MuseoSans-500.woff') format('woff'),
+      url('/src/assets/fonts/MuseoSans-500.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  src: url('/src/assets/fonts/MuseoSans-700.eot');
+  src: url('/src/assets/fonts/MuseoSans-700.eot?#iefix') format('embedded-opentype'),
+      url('/src/assets/fonts/MuseoSans-700.woff2') format('woff2'),
+      url('/src/assets/fonts/MuseoSans-700.woff') format('woff'),
+      url('/src/assets/fonts/MuseoSans-700.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  background-image: linear-gradient(rgba(16, 5, 43, 0.95), rgba(16, 5, 43, 0.95)), url('/src/assets/bg-speakers.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #10052B;
+}
+
+body::before {
+  content: '';
+  z-index: -1;
+  background: linear-gradient(106.57deg, #151742 0%, #15172E 101.45%);
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 100%;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    max-width: 1330px;
+  }
+}
+
+.font-bebas {
+  font-family: 'Bebas Neue', 'Arial Black', sans-serif;
+  font-weight: normal;
+}
+
+.font-museos500 {
+  font-family: 'Museo Sans', 'Arial', sans-serif;
+  font-weight: 500;
+}
+
+.font-museos700 {
+  font-family: 'Museo Sans', 'Arial', sans-serif;
+  font-weight: 700;
+}
