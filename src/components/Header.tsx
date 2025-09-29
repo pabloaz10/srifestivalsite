@@ -3,7 +3,7 @@ import React from 'react';
 
 const Header: React.FC = () => {
   const menu = [
-    { name: 'O Evento', url: '#about' },
+    { name: 'O evento', url: '#about' },
     { name: 'Programação', url: '#schedule' }
   ];
 
