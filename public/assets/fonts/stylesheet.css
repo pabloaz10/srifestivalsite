@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('/assets/fonts/BebasNeue-Regular.eot');
+    src: url('/assets/fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/BebasNeue-Regular.woff2') format('woff2'),
+        url('/assets/fonts/BebasNeue-Regular.woff') format('woff'),
+        url('/assets/fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('/assets/fonts/MuseoSans-500.eot');
+    src: url('/assets/fonts/MuseoSans-500.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/MuseoSans-500.woff2') format('woff2'),
+        url('/assets/fonts/MuseoSans-500.woff') format('woff'),
+        url('/assets/fonts/MuseoSans-500.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('/assets/fonts/MuseoSans-700.eot');
+    src: url('/assets/fonts/MuseoSans-700.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/MuseoSans-700.woff2') format('woff2'),
+        url('/assets/fonts/MuseoSans-700.woff') format('woff'),
+        url('/assets/fonts/MuseoSans-700.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+

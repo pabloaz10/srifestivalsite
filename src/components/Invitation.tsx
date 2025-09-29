@@ -35,7 +35,7 @@ const Invitation: React.FC = () => {
     <section
       className="z-50 pt-28 pb-48 xl:pt-40 xl:pb-[26rem]"
       style={{
-        backgroundImage: `url('/src/assets/bg.png')`,
+        backgroundImage: `url('/assets/bg.png')`,
         backgroundPosition: 'top center',
         backgroundSize: 'cover',
       }}

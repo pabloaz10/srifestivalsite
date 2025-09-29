@@ -7,7 +7,7 @@ const Schedule: React.FC = () => {
       className="py-20 sm:py-28 relative overflow-hidden"
     >
       <div className="absolute inset-0 bg-[#10052B]/90"></div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px]" style={{ backgroundImage: `url('/src/assets/bg-schedule.png')`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', opacity: 0.15 }}></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px]" style={{ backgroundImage: `url('/assets/bg-schedule.png')`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', opacity: 0.15 }}></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
           <h2 className="text-4xl sm:text-5xl font-extrabold text-white">Programação</h2>

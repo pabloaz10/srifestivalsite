@@ -28,7 +28,7 @@ const About: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={'/src/assets/svg/place-map-pin.svg'} alt="Ponto de Localização no Google Maps" />
+              <img src={'/assets/svg/place-map-pin.svg'} alt="Ponto de Localização no Google Maps" />
               <span className="ml-0.5 pr-10 text-xl xl:pr-0 xl:text-2xl">
                 Villa do Farol, Cianorte - PR
               </span>
@@ -36,7 +36,7 @@ const About: React.FC = () => {
           </div>
           <img
             className="hidden absolute w-[28%] mt-[-580px] right-[8rem] xl:block before:content-[''] before:absolute before:z-10 before:block before:w-full before:h-full before:rounded-full before:border-r-2 before:border-b-2 before:border-red-500"
-            src={'/src/assets/svg/sri-logo.svg'}
+            src={'/assets/svg/sri-logo.svg'}
             alt="Sri Logo"
             width="auto"
             height="auto"

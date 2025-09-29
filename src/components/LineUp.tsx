@@ -15,9 +15,9 @@ const LineUp = ({ data = [], sponsors = [], filteredLineup = [] }) => {
   const formatDate = (dateStr) => `Dia ${format(parse(dateStr, 'yyyy-MM-dd', new Date()), 'dd/MM')}`;
 
   return (
-    <div className="pb-32" style={{ background: `url('/src/assets/bg-speakers.png') top center no-repeat` }} id="line-up">
+    <div className="pb-32" style={{ background: `url('/assets/bg-speakers.png') top center no-repeat` }} id="line-up">
 
-      <Emphasis filteredLineup={filteredLineup} data={data} bgImage={'/src/assets/bg-speakers.png'} />
+      <Emphasis filteredLineup={filteredLineup} data={data} bgImage={'/assets/bg-speakers.png'} />
 
       <div className="content">
         <div className="container mx-auto">

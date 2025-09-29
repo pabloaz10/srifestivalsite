@@ -6,7 +6,7 @@ const Navbar = ({ menu = [] }) => {
         <a href="/">
           <img
             className="h-[80px] xl:h-[120px]"
-            src={'/src/assets/svg/sri-logo.svg'}
+            src={'/assets/svg/sri-logo.svg'}
             alt="Sri Logo"
             width="auto"
             height="auto"

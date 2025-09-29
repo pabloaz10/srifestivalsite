@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
         className="relative bg-blue-600/50 min-h-screen flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8"
       >
         <div className="absolute inset-0 bg-black/60"></div>
-        <div className="absolute top-0 left-0 w-full h-full" style={{ backgroundImage: `url('/src/assets/bg-speakers.png')`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', opacity: 0.5 }}></div>
+        <div className="absolute top-0 left-0 w-full h-full" style={{ backgroundImage: `url('/assets/bg-speakers.png')`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', opacity: 0.5 }}></div>
 
         <div className="relative z-10 text-left max-w-4xl ">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight text-white leading-tight">
@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
           </div>
           <img
             className="absolute z-[-1] top-48 right-[-78%] opacity-20 transition-all duration-75 xl:top-0"
-            src={'/src/assets/svg/map.svg'}
+            src={'/assets/svg/map.svg'}
             alt="Map SVG - SRI"
           />
           <div className="mt-8 hidden">
@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
         </div>
         <div className="absolute top-0 left-0 w-full h-full z-[-2] bg-blue-600">
           <video muted autoPlay loop className="w-full h-full object-cover opacity-90">
-            <source src={'/src/assets/mp4/video.mp4'} type="video/mp4" />
+            <source src={'/assets/mp4/video.mp4'} type="video/mp4" />
           </video>
         </div>
       </section>

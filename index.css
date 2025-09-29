@@ -3,11 +3,11 @@
 /* Custom fonts definition */
 @font-face {
   font-family: 'Bebas Neue';
-  src: url('/src/assets/fonts/BebasNeue-Regular.eot');
-  src: url('/src/assets/fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'),
-      url('/src/assets/fonts/BebasNeue-Regular.woff2') format('woff2'),
-      url('/src/assets/fonts/BebasNeue-Regular.woff') format('woff'),
-      url('/src/assets/fonts/BebasNeue-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/BebasNeue-Regular.eot');
+  src: url('/assets/fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/BebasNeue-Regular.woff2') format('woff2'),
+      url('/assets/fonts/BebasNeue-Regular.woff') format('woff'),
+      url('/assets/fonts/BebasNeue-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -15,11 +15,11 @@
 
 @font-face {
   font-family: 'Museo Sans';
-  src: url('/src/assets/fonts/MuseoSans-500.eot');
-  src: url('/src/assets/fonts/MuseoSans-500.eot?#iefix') format('embedded-opentype'),
-      url('/src/assets/fonts/MuseoSans-500.woff2') format('woff2'),
-      url('/src/assets/fonts/MuseoSans-500.woff') format('woff'),
-      url('/src/assets/fonts/MuseoSans-500.ttf') format('truetype');
+  src: url('/assets/fonts/MuseoSans-500.eot');
+  src: url('/assets/fonts/MuseoSans-500.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/MuseoSans-500.woff2') format('woff2'),
+      url('/assets/fonts/MuseoSans-500.woff') format('woff'),
+      url('/assets/fonts/MuseoSans-500.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -27,11 +27,11 @@
 
 @font-face {
   font-family: 'Museo Sans';
-  src: url('/src/assets/fonts/MuseoSans-700.eot');
-  src: url('/src/assets/fonts/MuseoSans-700.eot?#iefix') format('embedded-opentype'),
-      url('/src/assets/fonts/MuseoSans-700.woff2') format('woff2'),
-      url('/src/assets/fonts/MuseoSans-700.woff') format('woff'),
-      url('/src/assets/fonts/MuseoSans-700.ttf') format('truetype');
+  src: url('/assets/fonts/MuseoSans-700.eot');
+  src: url('/assets/fonts/MuseoSans-700.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/MuseoSans-700.woff2') format('woff2'),
+      url('/assets/fonts/MuseoSans-700.woff') format('woff'),
+      url('/assets/fonts/MuseoSans-700.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -46,7 +46,7 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   font-family: 'Inter', sans-serif;
-  background-image: linear-gradient(rgba(16, 5, 43, 0.95), rgba(16, 5, 43, 0.95)), url('/src/assets/bg-speakers.png');
+  background-image: linear-gradient(rgba(16, 5, 43, 0.95), rgba(16, 5, 43, 0.95)), url('/assets/bg-speakers.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
