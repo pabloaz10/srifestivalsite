@@ -193,8 +193,8 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ## 📞 Contato & Suporte
 
-- 🌐 **Website**: [srifestival.com.br](#)
-- 📱 **Instagram**: [@srifestival](#)
+- 🌐 **Website**: [srifestival.com.br](https://www.srifestival.com.br/)
+- 📱 **Instagram**: [@srifestival](https://www.instagram.com/srifestival/)
 
 ---
 
