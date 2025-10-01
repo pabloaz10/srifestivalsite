@@ -35,6 +35,18 @@ export const mockOrganizers = [
     website: "https://cianorte.pr.gov.br",
     type: "Organizador Principal",
     status: "published"
+  },
+  {
+    id: "4",
+    name: "Centro de Inovação de Cianorte", 
+    description: "Governo municipal comprometido com o desenvolvimento tecnológico e a inovação na região noroeste do Paraná.",
+    logo: {
+      id: "/assets/centroInovacao.png",
+      title: "Centro de Inovação de Cianorte"
+    },
+    website: "https://cianorte.pr.gov.br",
+    type: "Organizador Principal",
+    status: "published"
   }
 ];
 

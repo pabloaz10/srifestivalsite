@@ -85,12 +85,12 @@ const App = () => {
 
         if (lineup && Array.isArray(lineup)) {
           const dataLineup = orderByTime(lineup);
-          const filtered = lineup.filter((item: LineUpItem) =>
-            item.status === 'published' || item.status === 'draft'
-          );
-          setFilteredLineup(filtered);
+          // Manter todos os palestrantes para o filteredLineup (usado no Emphasis)
+          // O Emphasis irá filtrar internamente apenas os com status 'destaque'
+          setFilteredLineup(lineup);
 
-          const lineupByDate = dataLineup.reduce((acc: { [key: string]: LineUpItem[] }, item: LineUpItem) => {
+          // Group lineup by date - incluir todos os palestrantes na programação
+          const lineupByDate = lineup.reduce((acc: { [key: string]: LineUpItem[] }, item: LineUpItem) => {
             if (!acc[item.date]) {
               acc[item.date] = [];
             }
@@ -101,7 +101,7 @@ const App = () => {
           const finalLineup: DayLineup[] = Object.entries(lineupByDate).map(([date, items], index) => ({
             id: `day-${index}`,
             date_event: date,
-            lineUp: orderByTime(items)
+            lineUp: orderByTime(items as LineUpItem[])
           }));
 
           setLineup(finalLineup);

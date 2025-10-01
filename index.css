@@ -46,22 +46,9 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   font-family: 'Inter', sans-serif;
-  background-image: linear-gradient(rgba(16, 5, 43, 0.95), rgba(16, 5, 43, 0.95)), url('/assets/bg-speakers.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-color: #10052B;
 }
 
-body::before {
-  content: '';
-  z-index: -1;
-  background: linear-gradient(106.57deg, #151742 0%, #15172E 101.45%);
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100%;
-}
+
 
 .container {
   padding-left: 1rem;

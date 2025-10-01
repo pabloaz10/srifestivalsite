@@ -2,100 +2,77 @@
 export const mockLineup = [
   {
     id: "1",
-    name: "Dr. Ana Silva",
+    name: "Gabriela Priolli",
     time: "09:00:00",
     date: "2025-10-21",
-    pic: "ana-silva",
-    bio: "Palestraremos sobre <strong>Inteligência Artificial no Agronegócio</strong>",
+    pic: "gabriela-priolli",
+    bio: "Gabriela Priolli</strong>",
     title: "Doutora em Ciência da Computação - UNICAMP",
-    link: "https://linkedin.com/in/ana-silva",
+    link: "https://linkedin.com/in/gabriela-priolli",
     link_name: "Ver perfil",
-    status: "published"
+    status: "destaque"
   },
   {
     id: "2", 
-    name: "Prof. Carlos Mendes",
+    name: "Igor Coelho",
     time: "10:30:00",
     date: "2025-10-21",
-    pic: "carlos-mendes",
+    pic: "igor-coelho",
     bio: "Apresentação sobre <strong>Tecnologias Sustentáveis para o Futuro</strong>",
     title: "Professor de Engenharia Ambiental - USP",
-    link: "https://linkedin.com/in/carlos-mendes",
+    link: "https://linkedin.com/in/igor-coelho",
     link_name: "Conectar",
-    status: "published"
+    status: "destaque"
   },
   {
-    id: "3",
+    id: "3", 
     name: "Dra. Mariana Costa",
-    time: "14:00:00", 
+    time: "14:00:00",
     date: "2025-10-21",
-    pic: "mariana-costa",
-    bio: "Workshop sobre <strong>Biotecnologia e Medicina Personalizada</strong>",
-    title: "Pesquisadora em Biotecnologia - FIOCRUZ",
+    pic: "igor-coelho",
+    bio: "Apresentação sobre <strong>Tecnologias Sustentáveis para o Futuro</strong>",
+    title: "Professora de Engenharia Ambiental - USP",
     link: "https://linkedin.com/in/mariana-costa",
-    link_name: "Saiba mais",
-    status: "published"
+    link_name: "Conectar",
+    status: "publicado"
   },
   {
     id: "4",
-    name: "João Paulo Santos",
-    time: "15:30:00",
-    date: "2025-10-21", 
-    pic: "joao-santos",
-    bio: "Palestra sobre <strong>Empreendedorismo Digital e Startups</strong>",
-    title: "CEO - TechStart Incubadora",
-    link: "https://techstart.com.br",
-    link_name: "Visitar site",
-    status: "published"
+    name: "Dr. Roberto Silva",
+    time: "16:30:00", 
+    date: "2025-10-21",
+    pic: "roberto-silva",
+    bio: "Palestrante sobre <strong>Inteligência Artificial na Medicina</strong>",
+    title: "Pesquisador em IA - Instituto de Tecnologia",
+    link: "https://linkedin.com/in/roberto-silva",
+    link_name: "Ver perfil",
+    status: "destaque"
   },
   {
     id: "5",
-    name: "Dra. Fernanda Lima",
+    name: "Prof. Ana Beatriz",
     time: "09:30:00",
-    date: "2025-10-22",
-    pic: "fernanda-lima", 
-    bio: "Apresentação sobre <strong>Neurociência e Tecnologia Cognitiva</strong>",
-    title: "Neurocientista - Instituto do Cérebro",
-    link: "https://linkedin.com/in/fernanda-lima",
-    link_name: "Conectar", 
-    status: "published"
+    date: "2025-10-22", 
+    pic: "ana-beatriz",
+    bio: "Especialista em <strong>Biotecnologia e Inovação</strong>",
+    title: "Diretora de Pesquisa - UNICAMP",
+    link: "https://linkedin.com/in/ana-beatriz",
+    link_name: "Conectar",
+    status: "publicado"
   },
   {
     id: "6",
-    name: "Prof. Roberto Oliveira",
+    name: "Carlos Eduardo",
     time: "11:00:00",
     date: "2025-10-22",
-    pic: "roberto-oliveira",
-    bio: "Workshop sobre <strong>Robótica Educacional e Programação</strong>",
-    title: "Professor de Robótica - SENAI",
-    link: "https://linkedin.com/in/roberto-oliveira",
-    link_name: "Ver perfil",
-    status: "published"
+    pic: "carlos-eduardo", 
+    bio: "Empreendedor e <strong>Especialista em Startups</strong>",
+    title: "CEO - TechStart Brasil",
+    link: "https://linkedin.com/in/carlos-eduardo",
+    link_name: "Ver perfil", 
+    status: "destaque"
   },
-  {
-    id: "7",
-    name: "Dra. Patricia Rocha",
-    time: "14:30:00",
-    date: "2025-10-22",
-    pic: "patricia-rocha",
-    bio: "Palestra sobre <strong>Energias Renováveis e Smart Cities</strong>",
-    title: "Diretora de Inovação - EnergiaTech",
-    link: "https://energiatech.com.br",
-    link_name: "Conhecer empresa",
-    status: "published"
-  },
-  {
-    id: "8",
-    name: "Lucas Ferreira",
-    time: "16:00:00", 
-    date: "2025-10-22",
-    pic: "lucas-ferreira",
-    bio: "Mesa redonda sobre <strong>Futuro do Trabalho e IA</strong>",
-    title: "Diretor de Tecnologia - FutureTech",
-    link: "https://linkedin.com/in/lucas-ferreira",
-    link_name: "Conectar",
-    status: "draft"
-  }
+  
 ];
 
 export default mockLineup;

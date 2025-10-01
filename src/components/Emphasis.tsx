@@ -16,23 +16,22 @@ const Emphasis = ({ filteredLineup = [], data = [], bgImage }) => {
   const formatTime = (timeStr) => format(parse(timeStr, 'HH:mm:ss', new Date()), 'HH:mm');
   const formatDate = (dateStr) => `Dia ${format(parse(dateStr, 'yyyy-MM-dd', new Date()), 'dd/MM')}`;
 
-  // 'computed' do Vue foi convertido para 'useMemo' para otimização.
-  // Esta lógica existia no seu script mas não era usada no template.
-  // Mantive a conversão para ser fiel ao código original.
-  const filteredData = useMemo(() => {
-    return data.filter(event => event.status === 'draft');
-  }, [data]); // Recalcula apenas se a prop 'data' mudar.
+  // Filtrar apenas palestrantes com status 'destaque' para exibir na seção de destaques
+  const featuredSpeakers = useMemo(() => {
+    return filteredLineup.filter(speaker => speaker.status === 'destaque');
+  }, [filteredLineup]); // Recalcula apenas se 'filteredLineup' mudar.
 
-  const groupedEvents = useMemo(() => {
-    return filteredData.reduce((acc, event) => {
-      const dateKey = event.date;
-      if (!acc[dateKey]) {
-        acc[dateKey] = [];
-      }
-      acc[dateKey].push(event);
-      return acc;
-    }, {});
-  }, [filteredData]); // Recalcula apenas se 'filteredData' mudar.
+  // Remover groupedEvents não utilizado no componente
+  // const groupedEvents = useMemo(() => {
+  //   return filteredLineup.reduce((acc, event) => {
+  //     const dateKey = event.date;
+  //     if (!acc[dateKey]) {
+  //       acc[dateKey] = [];
+  //     }
+  //     acc[dateKey].push(event);
+  //     return acc;
+  //   }, {});
+  // }, [filteredLineup]);
 
   return (
     // O :style do Vue foi convertido para o objeto 'style' do React
@@ -55,7 +54,7 @@ const Emphasis = ({ filteredLineup = [], data = [], bgImage }) => {
           </h1>
 
           <div className="speakers flex justify-center w-full h-full">
-            {filteredLineup.length === 0 ? (
+            {featuredSpeakers.length === 0 ? (
               <div className="text-center py-12">
                 <p className="text-white/80 font-museos500 text-lg max-w-md">
                   Os palestrantes de destaque serão anunciados em breve!
@@ -63,7 +62,7 @@ const Emphasis = ({ filteredLineup = [], data = [], bgImage }) => {
               </div>
             ) : (
               <div className="line-up-calendar grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-                {filteredLineup.map((item) => (
+                {featuredSpeakers.map((item) => (
                   <CardEmphasis
                     key={item.id}
                     time={item.time}
