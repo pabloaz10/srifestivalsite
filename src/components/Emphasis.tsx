@@ -36,7 +36,7 @@ const Emphasis = ({ filteredLineup = [], data = [], bgImage }) => {
   return (
     // O :style do Vue foi convertido para o objeto 'style' do React
     <div
-      id="line-up"
+      id="destaques"
       className="pb-32"
       style={{
         background: bgImage ? `url(${bgImage}) top center no-repeat` : 'none'
