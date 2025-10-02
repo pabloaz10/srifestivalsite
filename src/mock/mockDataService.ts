@@ -22,8 +22,7 @@ class MockDataService implements IMockDataService {
   async getLineup(): Promise<any[]> {
     await simulateDelay();
     console.log('📊 Mock: Carregando dados do lineup...', mockLineup.length, 'eventos');
-    // Retornar todos os palestrantes, independente do status
-    return mockLineup;
+    return mockLineup.filter(item => item.status === 'published' || item.status === 'draft');
   }
 
   /**
