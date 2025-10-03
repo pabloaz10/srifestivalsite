@@ -16,17 +16,17 @@ const FloatingInstagramButton: React.FC = () => {
       <div className="relative bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 p-3 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300">
         {/* Efeito de brilho no hover */}
         <div className="absolute inset-0 bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 rounded-full opacity-0 group-hover:opacity-75 blur-sm transition-opacity duration-300"></div>
-        
+
         {/* Logo do Instagram */}
         <div className="relative z-10 w-8 h-8 flex items-center justify-center">
-          <img 
-            src="/assets/svg/InstagramLogo.svg" 
-            alt="Instagram" 
+          <img
+            src="/assets/svg/InstagramLogo.svg"
+            alt="Instagram"
             className="w-6 h-6 filter brightness-0 invert"
           />
         </div>
       </div>
-      
+
       {/* Tooltip */}
       <div className="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-black text-white px-3 py-2 rounded-lg text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
         Siga-nos no Instagram

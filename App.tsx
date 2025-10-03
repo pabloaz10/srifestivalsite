@@ -153,7 +153,7 @@ const App = () => {
       <About />
       <LineUp data={lineup} sponsors={sponsors} filteredLineup={filteredLineup} />
       <Organizers organizers={organizers} />
-      
+
       {/* Botão flutuante do Instagram */}
       <FloatingInstagramButton />
     </div>
