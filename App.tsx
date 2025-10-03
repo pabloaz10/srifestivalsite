@@ -6,6 +6,7 @@ import Hero from './src/components/Hero';
 import About from './src/components/About';
 import LineUp from './src/components/LineUp';
 import Organizers from './src/components/Organizers';
+import FloatingInstagramButton from './src/components/FloatingInstagramButton';
 
 // 2. TYPESCRIPT INTERFACES FOR YOUR DATA
 interface Sponsor {
@@ -152,6 +153,9 @@ const App = () => {
       <About />
       <LineUp data={lineup} sponsors={sponsors} filteredLineup={filteredLineup} />
       <Organizers organizers={organizers} />
+      
+      {/* Botão flutuante do Instagram */}
+      <FloatingInstagramButton />
     </div>
   );
 };

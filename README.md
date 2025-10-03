@@ -80,11 +80,11 @@ Certifique-se de ter instalado:
 ```
 sri-festival-site/
 ├── 📁 public/                 # Arquivos públicos
-├── 📁 src/                    # Código fonte
 │   ├── 📁 assets/            # Imagens, fontes e mídias
 │   │   ├── 📁 fonts/         # Fontes customizadas
 │   │   ├── 📁 mp4/           # Vídeos
 │   │   └── 📁 svg/           # Ícones SVG
+├── 📁 src/                    # Código fonte
 │   ├── 📁 components/        # Componentes React
 │   │   ├── About.tsx         # Seção sobre o evento
 │   │   ├── Header.tsx        # Cabeçalho

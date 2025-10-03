@@ -27,14 +27,12 @@ export const EventCard = ({ event, isFirst, isLast }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const defaultPic = 'https://admin.srifestival.com.br/assets/7d15d99b-37f9-4430-85e6-5e7c73cebd9c?fit=cover&width=106&height=106';
+  const defaultPic = '/assets/palestrantes/default-speaker.jpg';
 
   return (
     <div
       ref={cardRef}
-      className={`my-2 flex w-full items-center px-4 py-4 transition-all duration-200 xl:px-12 ${isSticky ? 'xl:sticky top-16' : 'relative'
-        }`}
-      style={{ background: isSticky ? '#242644' : 'transparent' }}
+      className="my-2 flex w-full items-center px-4 py-4 transition-all duration-200 xl:px-12 relative"
     >
       <h3 className="text-2xl font-bebas tracking-wider text-white xl:text-3xl">
         {formatTime(event.time)}
@@ -62,31 +60,19 @@ export const EventCard = ({ event, isFirst, isLast }) => {
       <img
         className={`my-5 aspect-square max-h-[106px] max-w-[106px] rounded-full border-2 object-cover object-center transition-all xl:mr-14 ${isSticky ? 'border-pink-500 border-opacity-100 border-4 animate-pulse' : 'border-white border-opacity-40'
           }`}
-        src={event.pic ? `https://admin.srifestival.com.br/assets/${event.pic}?fit=cover&width=106&height=106` : defaultPic}
+        src={event.pic || defaultPic}
         alt={`Palestrante - ${event.name}`}
       />
 
       <div className="flex w-full flex-col items-center text-white xl:items-start">
         <span
           className="text-center font-museos700 text-xl xl:text-left xl:text-2xl"
-          dangerouslySetInnerHTML={{ __html: event.bio }} // Replaces v-html
+          dangerouslySetInnerHTML={{ __html: event.name }}
         />
         {event.title && (
           <p className="mt-3 mb-4 max-w-[600px] text-center text-lg text-[#0CE8F6] xl:text-left xl:text-base">
             {event.title}
           </p>
-        )}
-        {/* Logic for internal vs external links */}
-        {event.link && (
-          event.link.includes('.') ? (
-            <a href={event.link} target="_blank" rel="noopener noreferrer" className="my-10 bg-[#0CE8F6] px-14 pt-2 pb-1 text-center font-bebas text-xl text-white hover:bg-[#05b7c4] xl:my-0 xl:px-6">
-              {event.link_name}
-            </a>
-          ) : (
-            <Link to={event.link} className="my-10 bg-[#0CE8F6] px-14 pt-2 pb-1 text-center font-bebas text-xl text-white hover:bg-[#05b7c4] xl:my-0 xl:px-6">
-              {event.link_name}
-            </Link>
-          )
         )}
       </div>
     </div>

@@ -3,11 +3,11 @@ export const mockLineup = [
   {
     id: "1",
     name: "Gabriela Priolli",
-    time: "09:00:00",
+    time: "19:00:00",
     date: "2025-10-21",
-    pic: "gabriela-priolli",
-    bio: "Gabriela Priolli</strong>",
-    title: "Doutora em Ciência da Computação - UNICAMP",
+    pic: "/assets/palestrantes/Gabriela-Priolli.JPG",
+    bio: "Gabriela Prioli é doutoranda pela Universidade de Salamanca em co-tutela com a FADISP,e se destacou inicialmente no mundo do Direito antes de expandir sua carreira para a comunicação. Reconhecida por sua excelente oratória e habilidade em expor argumentos de forma clara e precisa, rapidamente se tornou referência como debatedora. Em pouco mais de quatro anos de carreira pública, Gabriela publicou dois best-sellers, fundou um dos maiores clubes do livro do Brasil, desenvolveu cursos que já impactaram mais de 70 mil alunos e conquistou mais de 4,5 milhões de seguidores nas redes sociais. Sua trajetória inclui passagens por seis programas, e atualmente apresenta seu próprio programa no GNT.",
+    title: "Palestrante, Advogada e Cientista Política",
     link: "https://linkedin.com/in/gabriela-priolli",
     link_name: "Ver perfil",
     status: "destaque"
@@ -15,64 +15,27 @@ export const mockLineup = [
   {
     id: "2", 
     name: "Igor Coelho",
-    time: "10:30:00",
-    date: "2025-10-21",
-    pic: "igor-coelho",
-    bio: "Apresentação sobre <strong>Tecnologias Sustentáveis para o Futuro</strong>",
-    title: "Professor de Engenharia Ambiental - USP",
+    time: "19:00:00",
+    date: "2025-10-22",
+    pic: "/assets/palestrantes/Igor-Coelho.jpeg",
+    bio: "Igor Coelho, conhecido também como Igor 3K, nascido no Rio de Janeiro, é fundador do Grupo Flow, co-fundador e apresentador do Flow Podcast. Está na internet há mais de 10 anos, e antes de chegar ao seu ápice, como apresentador do Flow Podcast, foi criador de conteúdo sobre games, onde se tornou grande referência para o cenário de Fighting Games no Brasil. Segundo ele, sua capacidade de se comunicar com qualquer pessoa é uma herança de seu pai. Ele acredita que ter um interesse sincero pelo que as pessoas têm a dizer é crucial, assim como a habilidade de se adaptar a diferentes situações em uma conversa, o que ele credita como parte de seu sucesso no mundo dos vídeos e podcasts no Brasil.",
+    title: "Palestrante, Apresentador e Criador de Conteúdo",
     link: "https://linkedin.com/in/igor-coelho",
     link_name: "Conectar",
     status: "destaque"
   },
   {
     id: "3", 
-    name: "Dra. Mariana Costa",
-    time: "14:00:00",
-    date: "2025-10-21",
-    pic: "igor-coelho",
-    bio: "Apresentação sobre <strong>Tecnologias Sustentáveis para o Futuro</strong>",
-    title: "Professora de Engenharia Ambiental - USP",
-    link: "https://linkedin.com/in/mariana-costa",
-    link_name: "Conectar",
-    status: "publicado"
-  },
-  {
-    id: "4",
-    name: "Dr. Roberto Silva",
-    time: "16:30:00", 
-    date: "2025-10-21",
-    pic: "roberto-silva",
-    bio: "Palestrante sobre <strong>Inteligência Artificial na Medicina</strong>",
-    title: "Pesquisador em IA - Instituto de Tecnologia",
-    link: "https://linkedin.com/in/roberto-silva",
-    link_name: "Ver perfil",
-    status: "destaque"
-  },
-  {
-    id: "5",
-    name: "Prof. Ana Beatriz",
-    time: "09:30:00",
-    date: "2025-10-22", 
-    pic: "ana-beatriz",
-    bio: "Especialista em <strong>Biotecnologia e Inovação</strong>",
-    title: "Diretora de Pesquisa - UNICAMP",
-    link: "https://linkedin.com/in/ana-beatriz",
-    link_name: "Conectar",
-    status: "publicado"
-  },
-  {
-    id: "6",
-    name: "Carlos Eduardo",
-    time: "11:00:00",
+    name: "Igor Coelho",
+    time: "19:00:00",
     date: "2025-10-22",
-    pic: "carlos-eduardo", 
-    bio: "Empreendedor e <strong>Especialista em Startups</strong>",
-    title: "CEO - TechStart Brasil",
-    link: "https://linkedin.com/in/carlos-eduardo",
-    link_name: "Ver perfil", 
-    status: "destaque"
-  },
-  
+    pic: "/assets/palestrantes/Igor-Coelho.jpeg",
+    bio: "Igor Coelho, conhecido também como Igor 3K, nascido no Rio de Janeiro, é fundador do Grupo Flow, co-fundador e apresentador do Flow Podcast. Está na internet há mais de 10 anos, e antes de chegar ao seu ápice, como apresentador do Flow Podcast, foi criador de conteúdo sobre games, onde se tornou grande referência para o cenário de Fighting Games no Brasil. Segundo ele, sua capacidade de se comunicar com qualquer pessoa é uma herança de seu pai. Ele acredita que ter um interesse sincero pelo que as pessoas têm a dizer é crucial, assim como a habilidade de se adaptar a diferentes situações em uma conversa, o que ele credita como parte de seu sucesso no mundo dos vídeos e podcasts no Brasil.",
+    title: "Palestrante, Apresentador e Criador de Conteúdo",
+    link: "https://linkedin.com/in/igor-coelho",
+    link_name: "Conectar",
+    status: "published"
+  }
 ];
 
 export default mockLineup;
