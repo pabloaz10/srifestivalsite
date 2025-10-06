@@ -23,7 +23,7 @@ const Invitation: React.FC = () => {
 
   return (
     <section
-      className="relative z-50 pt-28 pb-48 xl:pt-40 xl:pb-[26rem]"
+      className="relative z-50 pt-28 pb-48 xl:pt-40 xl:pb-[26rem]" id="invitation"
       style={{
         backgroundImage: `url('/assets/bg.png')`,
         backgroundPosition: 'top center',

@@ -6,6 +6,8 @@ import Hero from './src/components/Hero';
 import About from './src/components/About';
 import LineUp from './src/components/LineUp';
 import Organizers from './src/components/Organizers';
+import FloatingInstagramButton from './src/components/FloatingInstagramButton';
+import { Analytics } from "@vercel/analytics/react";
 
 // 2. TYPESCRIPT INTERFACES FOR YOUR DATA
 interface Sponsor {
@@ -142,6 +144,7 @@ const App = () => {
 
   return (
     <div className="page relative">
+      <Analytics />
       {showErrorBanner && (
         <div className="bg-yellow-500 text-black px-4 py-2 text-center text-sm font-medium">
           ⚠️ {error} - O site está funcionando em modo offline.
@@ -152,6 +155,9 @@ const App = () => {
       <About />
       <LineUp data={lineup} sponsors={sponsors} filteredLineup={filteredLineup} />
       <Organizers organizers={organizers} />
+
+      {/* Botão flutuante do Instagram */}
+      <FloatingInstagramButton />
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Organizers = ({ organizers = [] }) => {
   return (
-    <div className="pb-25">
+    <div className="pb-25" id="organizers">
       <div className="container mx-auto">
         <div className="content">
           <h2 className="mb-5 font-bebas text-[#05b7c4] text-[26px] leading-[26px] tracking-wider xl:text-3xl xl:leading-[58px]">
@@ -26,11 +26,11 @@ const Organizers = ({ organizers = [] }) => {
                   return acc;
                 }, {});
                 return Object.entries(groupedOrganizers).map(([type, organizerList]) => (
-                  <div key={type} className="flex flex-col">
-                    <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                  <div key={type} className="flex flex-col ">
+                    <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
                       {(organizerList as any[]).map((organizer) => (
                         <li key={organizer.id} className="flex flex-col items-center text-center text-white backdrop-blur-sm rounded-lg p-6 transition-all duration-300">
-                          <div className="w-32 h-32 mb-4 flex items-center justify-center  rounded-lg overflow-hidden">
+                          <div className="w-45 h-45 mb-4 flex items-center justify-center  rounded-lg overflow-hidden ">
                             <img
                               className="object-contain w-full h-full p-2"
                               src={organizer.logo.id}
