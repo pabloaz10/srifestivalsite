@@ -7,7 +7,7 @@ import About from './src/components/About';
 import LineUp from './src/components/LineUp';
 import Organizers from './src/components/Organizers';
 import FloatingInstagramButton from './src/components/FloatingInstagramButton';
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 
 // 2. TYPESCRIPT INTERFACES FOR YOUR DATA
 interface Sponsor {
