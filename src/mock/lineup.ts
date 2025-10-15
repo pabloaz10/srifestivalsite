@@ -23,6 +23,68 @@ export const mockLineup = [
     link: "https://linkedin.com/in/igor-coelho",
     link_name: "Conectar",
     status: "destaque"
+  },
+  // Eventos Dia 21/10/2025
+  {
+    id: "3",
+    name: "Credenciamento",
+    time: "18:00:00",
+    date: "2025-10-21",
+    pic: "",
+    bio: "Recepção dos participantes e entrega de materiais do evento.",
+    title: "Abertura do Evento",
+    link: "",
+    link_name: "",
+    status: "evento"
+  },
+  {
+    id: "4",
+    name: "Cerimônia de Abertura",
+    time: "18:30:00",
+    date: "2025-10-21",
+    pic: "",
+    bio: "Abertura oficial do SRI Festival 2025 com apresentação da programação e boas-vindas aos participantes.",
+    title: "Cerimônia Oficial",
+    link: "",
+    link_name: "",
+    status: "evento"
+  },
+  // Eventos Dia 22/10/2025
+  {
+    id: "5",
+    name: "Credenciamento",
+    time: "18:00:00",
+    date: "2025-10-22",
+    pic: "",
+    bio: "Recepção dos participantes para o segundo dia do evento.",
+    title: "Recepção",
+    link: "",
+    link_name: "",
+    status: "evento"
+  },
+  {
+    id: "6",
+    name: "Networking Coffee",
+    time: "20:30:00",
+    date: "2025-10-21",
+    pic: "",
+    bio: "Momento de networking entre os participantes com coffee break.",
+    title: "Coffee Break & Networking",
+    link: "",
+    link_name: "",
+    status: "evento"
+  },
+  {
+    id: "7",
+    name: "Networking Coffee",
+    time: "20:30:00",
+    date: "2025-10-22",
+    pic: "",
+    bio: "Encerramento do evento com networking e confraternização entre os participantes.",
+    title: "Coffee Break & Networking",
+    link: "",
+    link_name: "",
+    status: "evento"
   }
 ];
 
