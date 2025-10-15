@@ -87,11 +87,8 @@ const App = () => {
 
         if (lineup && Array.isArray(lineup)) {
           const dataLineup = orderByTime(lineup);
-          // Manter todos os palestrantes para o filteredLineup (usado no Emphasis)
-          // O Emphasis irá filtrar internamente apenas os com status 'destaque'
           setFilteredLineup(lineup);
 
-          // Group lineup by date - incluir todos os palestrantes na programação
           const lineupByDate = lineup.reduce((acc: { [key: string]: LineUpItem[] }, item: LineUpItem) => {
             if (!acc[item.date]) {
               acc[item.date] = [];
