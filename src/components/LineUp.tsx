@@ -64,11 +64,13 @@ const LineUp = ({ data = [], sponsors = [], filteredLineup = [] }) => {
   // Function to get status priority (lower number = higher priority)
   const getStatusPriority = (status) => {
     const priorities = {
-      'atracao': 1,    // Highest priority
-      'destaque': 2,   // Second priority  
-      'evento': 3      // Lowest priority
+      'abertura': 1,   // Highest priority - Opening events
+      'atracao': 2,    // Second priority - Attractions  
+      'palestra': 3,   // Third priority - Lectures
+      'destaque': 4,   // Fourth priority - Featured speakers
+      'evento': 5      // Lowest priority - General events
     };
-    return priorities[status] || 4; // Default priority for unknown status
+    return priorities[status] || 6; // Default priority for unknown status
   };
 
   // Function to group events by period

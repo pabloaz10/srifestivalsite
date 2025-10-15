@@ -59,7 +59,7 @@ export const mockLineup = [
     title: "Abertura do Evento",
     link: "",
     link_name: "",
-    status: "evento"
+    status: "abertura"
   },
   {
     id: "213",
@@ -71,7 +71,7 @@ export const mockLineup = [
     title: "A Inteligência Artificial está transformando a forma como os serviços públicos são prestados, trazendo eficiência e inovação.",
     link: "",
     link_name: "",
-    status: "evento"
+    status: "palestra"
   },
   {
     id: "214",
@@ -83,7 +83,7 @@ export const mockLineup = [
     title: "A liderança pública na era da inteligência artificial requer uma nova abordagem para a gestão e a tomada de decisões.",
     link: "",
     link_name: "",
-    status: "evento"
+    status: "palestra"
   },
   {
     id: "215",
@@ -119,7 +119,7 @@ export const mockLineup = [
     title: "Abertura do Evento",
     link: "",
     link_name: "",
-    status: "evento"
+    status: "abertura"
   },
   {
     id: "218",
@@ -240,7 +240,7 @@ export const mockLineup = [
     title: "Cerimônia Oficial",
     link: "https://forms.gle/SAdpgxx4ay8TDa5k6",
     link_name: "",
-    status: "evento"
+    status: "palestra"
   },
   {
     id: "224",
@@ -252,7 +252,7 @@ export const mockLineup = [
     title: "Cerimônia Oficial",
     link: "",
     link_name: "",
-    status: "evento"
+    status: "palestra"
   },
   {
     id: "10",
