@@ -86,11 +86,11 @@ const LineUp = ({ data = [], sponsors = [], filteredLineup = [] }) => {
         // First sort by status priority
         const priorityA = getStatusPriority(a.status);
         const priorityB = getStatusPriority(b.status);
-        
+
         if (priorityA !== priorityB) {
           return priorityA - priorityB; // Lower number = higher priority
         }
-        
+
         // If same priority, sort by time
         return a.time.localeCompare(b.time);
       });
