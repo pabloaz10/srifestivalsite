@@ -28,7 +28,7 @@ export const mockLineup = [
   {
     id: "3",
     name: "Credenciamento",
-    time: "18:00:00",
+    time: "09:00:00",
     date: "2025-10-21",
     pic: "",
     bio: "Recepção dos participantes e entrega de materiais do evento.",
@@ -137,8 +137,8 @@ export const mockLineup = [
   },
   {
     id: "12",
-    name: "Futuro Presente",
-    time: "19:30:00",
+    name: "Futuro Presente: Robótica com Arduino Demostrações e Oficinas - UNIPAR",
+    time: "08:30:00",
     date: "2025-10-22",
     pic: "/assets/sriatracoes/futuroPresente.png",
     bio: "Discussão sobre tecnologias emergentes que já são realidade e como elas impactam nosso presente.",
@@ -186,6 +186,18 @@ export const mockLineup = [
   {
     id: "16",
     name: "Turismo 3D",
+    time: "18:30:00",
+    date: "2025-10-22",
+    pic: "/assets/sriatracoes/turismo3d.png",
+    bio: "Experiência imersiva de turismo virtual com tecnologia 3D e realidade virtual para explorar destinos.",
+    title: "Turismo Virtual e 3D",
+    link: "",
+    link_name: "",
+    status: "atracao"
+  },
+  {
+    id: "17",
+    name: "Futuro Presente: Robótica com Arduino Demostrações e Oficinas - UNIPAR",
     time: "18:30:00",
     date: "2025-10-22",
     pic: "/assets/sriatracoes/turismo3d.png",
