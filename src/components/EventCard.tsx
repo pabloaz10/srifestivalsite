@@ -74,6 +74,20 @@ export const EventCard = ({ event, isFirst, isLast }) => {
             {event.title}
           </p>
         )}
+
+        {/* Botão de cadastro/inscrição quando há link */}
+        {event.link && (
+          <div className="mt-4 xl:mt-2">
+            <a
+              href={event.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#37e3f0] text-black inline-flex items-center justify-center text-base font-bold py-2 px-4 hover:bg-[#04f7ff] transition-colors cursor-pointer shadow-lg hover:scale-105 transform duration-200 font-bebas tracking-wider"
+            >
+              {event.link_name || 'Inscreva-se'}
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );

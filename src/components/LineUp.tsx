@@ -6,6 +6,9 @@ import { EventCard } from './EventCard';
 import Sponsors from './sponsors';
 import Emphasis from './Emphasis';
 
+// Import mock data
+import mockPeriods from '../mock/periods';
+
 // Import assets
 
 // Props: data, sponsors, filteredLineup
@@ -22,15 +25,26 @@ const LineUp = ({ data = [], sponsors = [], filteredLineup = [] }) => {
     return 'noite';
   };
 
-  // Function to get period name and title
-  const getPeriodInfo = (period, events) => {
-    const periodNames = {
+  // Function to get period name and title from mock data
+  const getPeriodInfo = (period, events, date) => {
+    // Default fallback values
+    const defaultPeriodNames = {
       manha: 'Manhã',
       tarde: 'Tarde',
       noite: 'Noite'
     };
 
-    // Create titles based on events in the period
+    // Get period info from mock data or use defaults
+    const periodData = mockPeriods[date]?.[period];
+
+    if (periodData) {
+      return {
+        name: periodData.name,
+        title: `${periodData.name} - ${periodData.title}`
+      };
+    }
+
+    // Fallback: create titles based on events in the period
     const eventTitles = events
       .filter(event => event.status === 'atracao' || event.status === 'destaque')
       .map(event => event.name)
@@ -38,13 +52,23 @@ const LineUp = ({ data = [], sponsors = [], filteredLineup = [] }) => {
       .join(', ');
 
     const title = eventTitles
-      ? `${periodNames[period]} - ${eventTitles}`
-      : periodNames[period];
+      ? `${defaultPeriodNames[period]} - ${eventTitles}`
+      : defaultPeriodNames[period];
 
     return {
-      name: periodNames[period],
+      name: defaultPeriodNames[period],
       title: title
     };
+  };
+
+  // Function to get status priority (lower number = higher priority)
+  const getStatusPriority = (status) => {
+    const priorities = {
+      'atracao': 1,    // Highest priority
+      'destaque': 2,   // Second priority  
+      'evento': 3      // Lowest priority
+    };
+    return priorities[status] || 4; // Default priority for unknown status
   };
 
   // Function to group events by period
@@ -56,9 +80,20 @@ const LineUp = ({ data = [], sponsors = [], filteredLineup = [] }) => {
       periods[period].push(event);
     });
 
-    // Sort events within each period by time
+    // Sort events within each period by status priority first, then by time
     Object.keys(periods).forEach(period => {
-      periods[period].sort((a, b) => a.time.localeCompare(b.time));
+      periods[period].sort((a, b) => {
+        // First sort by status priority
+        const priorityA = getStatusPriority(a.status);
+        const priorityB = getStatusPriority(b.status);
+        
+        if (priorityA !== priorityB) {
+          return priorityA - priorityB; // Lower number = higher priority
+        }
+        
+        // If same priority, sort by time
+        return a.time.localeCompare(b.time);
+      });
     });
 
     return periods;
@@ -104,16 +139,16 @@ const LineUp = ({ data = [], sponsors = [], filteredLineup = [] }) => {
                     {Object.entries(periodGroups).map(([period, events]) => {
                       if (events.length === 0) return null;
 
-                      const periodInfo = getPeriodInfo(period, events);
+                      const periodInfo = getPeriodInfo(period, events, day.date_event);
 
                       return (
                         <div key={period} className="mb-8">
-                          {/* Period Header */}
+                          {/* Period Header 
                           <div className="mx-auto w-max xl:mx-0 xl:ml-28 mb-4">
-                            <h2 className="bg-gradient-to-r from-pink-500 to-green-500 bg-clip-text text-transparent font-bebas text-2xl font-bold xl:text-3xl">
+                            <h2 className=" text-pink-500 bg-clip-text  font-bebas text-2xl font-bold xl:text-3xl">
                               {periodInfo.title}
                             </h2>
-                          </div>
+                          </div>*/}
 
                           {/* Events in this period */}
                           {events.map((event, index) => (
