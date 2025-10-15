@@ -3,11 +3,11 @@ export const mockPeriods = {
   "2025-10-21": {
     manha: {
       name: "Manhã",
-      title: "Forum IA, Futuro do trabalho e empreendedorismo inovador"
+      title: "InovaGov, setor público e transformação digital"
     },
     tarde: {
       name: "Tarde", 
-      title: "Tecnologia e Sustentabilidade"
+      title: "Tecnologia, Sustentabilidade, cultura e turismo"
     },
     noite: {
       name: "Noite",
@@ -17,15 +17,15 @@ export const mockPeriods = {
   "2025-10-22": {
     manha: {
       name: "Manhã",
-      title: "Robótica com Arduino e Tecnologias Emergentes"
+      title: "Tecnologia, trabalho e Desenvolvimento Digital"
     },
     tarde: {
       name: "Tarde",
-      title: "Desenvolvimento e Criatividade Digital"
+      title: "Desenvolvimento e mulheres na tecnologia"
     },
     noite: {
-      name: "Noite", 
-      title: "Inteligência Artificial e Mulheres na Tecnologia"
+      name: "Noite",
+      title: "Inovação, Robótica e Networking"
     }
   }
 };

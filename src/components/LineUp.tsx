@@ -133,7 +133,7 @@ const LineUp = ({ data = [], sponsors = [], filteredLineup = [] }) => {
                 return (
                   <div key={day.id} className="w-full rounded-xl">
                     {/* Day Header */}
-                    <h1 className="sticky top-16 z-30 mx-auto w-max bg-white px-6 py-2 text-center font-bebas text-3xl font-bold text-black xl:mx-0 xl:ml-28 xl:text-left shadow-lg">
+                    <h1 className="sticky top-16 z-30 mx-auto w-max bg-white px-6 py-2 text-center font-bebas text-3xl font-bold text-black xl:mx-0 xl:ml-12 xl:text-left shadow-lg">
                       {formatDate(day.date_event)}
                     </h1>
 
@@ -145,12 +145,12 @@ const LineUp = ({ data = [], sponsors = [], filteredLineup = [] }) => {
 
                       return (
                         <div key={period} className="mb-8">
-                          {/* Period Header 
-                          <div className="mx-auto w-max xl:mx-0 xl:ml-28 mb-4">
-                            <h2 className=" text-pink-500 bg-clip-text  font-bebas text-2xl font-bold xl:text-3xl">
+
+                          <div className="mx-auto mt-3 w-max xl:mx-0 xl:ml-12 mb-4 ">
+                            <h2 className=" text-[#37e3f0] bg-clip-text  font-bebas text-2xl font-bold xl:text-3xl">
                               {periodInfo.title}
                             </h2>
-                          </div>*/}
+                          </div>
 
                           {/* Events in this period */}
                           {events.map((event, index) => (
