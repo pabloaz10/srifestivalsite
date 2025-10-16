@@ -6,9 +6,6 @@ import { EventCard } from './EventCard';
 import Sponsors from './sponsors';
 import Emphasis from './Emphasis';
 
-// Import mock data
-import mockPeriods from '../mock/periods';
-
 // Import assets
 
 // Props: data, sponsors, filteredLineup
@@ -16,90 +13,6 @@ const LineUp = ({ data = [], sponsors = [], filteredLineup = [] }) => {
 
   // Helper function to format date
   const formatDate = (dateStr) => `Dia ${format(parse(dateStr, 'yyyy-MM-dd', new Date()), 'dd/MM')}`;
-
-  // Function to get period based on time
-  const getPeriod = (timeStr) => {
-    const hour = parseInt(timeStr.split(':')[0]);
-    if (hour >= 6 && hour < 12) return 'manha';
-    if (hour >= 12 && hour < 18) return 'tarde';
-    return 'noite';
-  };
-
-  // Function to get period name and title from mock data
-  const getPeriodInfo = (period, events, date) => {
-    // Default fallback values
-    const defaultPeriodNames = {
-      manha: 'Manhã',
-      tarde: 'Tarde',
-      noite: 'Noite'
-    };
-
-    // Get period info from mock data or use defaults
-    const periodData = mockPeriods[date]?.[period];
-
-    if (periodData) {
-      return {
-        name: periodData.name,
-        title: `${periodData.name} - ${periodData.title}`
-      };
-    }
-
-    // Fallback: create titles based on events in the period
-    const eventTitles = events
-      .filter(event => event.status === 'atracao' || event.status === 'destaque')
-      .map(event => event.name)
-      .slice(0, 3) // Limit to 3 events for title
-      .join(', ');
-
-    const title = eventTitles
-      ? `${defaultPeriodNames[period]} - ${eventTitles}`
-      : defaultPeriodNames[period];
-
-    return {
-      name: defaultPeriodNames[period],
-      title: title
-    };
-  };
-
-  // Function to get status priority (lower number = higher priority)
-  const getStatusPriority = (status) => {
-    const priorities = {
-      'abertura': 1,   // Highest priority - Opening events
-      'atracao': 2,    // Second priority - Attractions  
-      'palestra': 3,   // Third priority - Lectures
-      'destaque': 4,   // Fourth priority - Featured speakers
-      'evento': 5      // Lowest priority - General events
-    };
-    return priorities[status] || 6; // Default priority for unknown status
-  };
-
-  // Function to group events by period
-  const groupEventsByPeriod = (events) => {
-    const periods = { manha: [], tarde: [], noite: [] };
-
-    events.forEach(event => {
-      const period = getPeriod(event.time);
-      periods[period].push(event);
-    });
-
-    // Sort events within each period by status priority first, then by time
-    Object.keys(periods).forEach(period => {
-      periods[period].sort((a, b) => {
-        // First sort by status priority
-        const priorityA = getStatusPriority(a.status);
-        const priorityB = getStatusPriority(b.status);
-
-        if (priorityA !== priorityB) {
-          return priorityA - priorityB; // Lower number = higher priority
-        }
-
-        // If same priority, sort by time
-        return a.time.localeCompare(b.time);
-      });
-    });
-
-    return periods;
-  };
 
   return (
     <div className="pb-32" style={{ background: `url('/assets/bg-speakers.png') top center no-repeat` }} id="programacao">
@@ -127,6 +40,7 @@ const LineUp = ({ data = [], sponsors = [], filteredLineup = [] }) => {
               </div>
             ) : (
               /* Map over each day's data */
+
               data.map((day) => {
                 const periodGroups = groupEventsByPeriod(day.lineUp);
 
@@ -167,6 +81,7 @@ const LineUp = ({ data = [], sponsors = [], filteredLineup = [] }) => {
                   </div>
                 );
               })
+
             )}
           </div>
         </div>
