@@ -146,8 +146,8 @@ const LineUp = ({ data = [], sponsors = [], filteredLineup = [] }) => {
                       return (
                         <div key={period} className="mb-8">
 
-                          <div className="mx-auto mt-3 w-max xl:mx-0 xl:ml-12 mb-4 ">
-                            <h2 className=" text-[#37e3f0] bg-clip-text  font-bebas text-2xl font-bold xl:text-3xl">
+                          <div className="mx-auto mt-3 w-full max-w-[90vw] xl:max-w-none xl:mx-0 xl:ml-12 mb-4 px-4 xl:px-0">
+                            <h2 className="text-[#37e3f0] bg-clip-text font-bebas text-2xl font-bold xl:text-3xl text-center xl:text-left break-words">
                               {periodInfo.title}
                             </h2>
                           </div>
