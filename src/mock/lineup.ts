@@ -44,7 +44,7 @@ export const mockLineup = [
     date: "2025-10-21",
     pic: "/assets/sriatracoes/culturaTurismo.png",
     bio: "A inovação é um elemento transversal que pode transformar os setores de cultura e turismo, promovendo desenvolvimento sustentável e experiências enriquecedoras.",
-    title: "A inovação é um elemento transversal que pode transformar os setores de cultura e turismo, promovendo desenvolvimento sustentável e experiências enriquecedoras.",
+    title: "Inovação transformando cultura e turismo para experiências sustentáveis",
     link: "https://forms.gle/aziz9oMVNgtvaWn77",
     link_name: "",
     status: "atracao"
@@ -69,7 +69,7 @@ export const mockLineup = [
     date: "2025-10-22",
     pic: "/assets/sriatracoes/mulherInovadora.png",
     bio: "Painel sobre o papel das mulheres na inovação tecnológica e empreendedorismo no setor de tecnologia.",
-    title: "Um espaço dedicado a celebrar e fortalecer o papel da mulher na construção do amanhã! Uma conversa NECESSÁRIA para quem acredita que a diversidade é o motor da verdadeira inovação! Venha se inspirar com histórias incríveis de mulheres que estão moldando o futuro da tecnologia e do empreendedorismo.",
+    title: "Celebrando o papel da mulher na construção do futuro tech e empreendedorismo inovador",
     link: "https://forms.gle/D1BQnFKUFiFtM43X6",
     link_name: "",
     status: "atracao"
