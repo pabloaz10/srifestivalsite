@@ -40,23 +40,48 @@ const LineUp = ({ data = [], sponsors = [], filteredLineup = [] }) => {
               </div>
             ) : (
               /* Map over each day's data */
-              data.map((day) => (
-                <div key={day.id} className="w-full rounded-xl">
-                  <h1 className="sticky top-16 z-30 mx-auto w-max bg-white px-6 py-2 text-center font-bebas text-3xl font-bold text-black xl:mx-0 xl:ml-28 xl:text-left shadow-lg">
-                    {formatDate(day.date_event)}
-                  </h1>
 
-                  {/* Map over the lineup for that day, rendering an EventCard for each */}
-                  {day.lineUp.map((event, index) => (
-                    <EventCard
-                      key={event.id}
-                      event={event}
-                      isFirst={index === 0}
-                      isLast={index === day.lineUp.length - 1}
-                    />
-                  ))}
-                </div>
-              ))
+              data.map((day) => {
+                const periodGroups = groupEventsByPeriod(day.lineUp);
+
+                return (
+                  <div key={day.id} className="w-full rounded-xl">
+                    {/* Day Header */}
+                    <h1 className="sticky top-16 z-30 mx-auto w-max bg-white px-6 py-2 text-center font-bebas text-3xl font-bold text-black xl:mx-0 xl:ml-12 xl:text-left shadow-lg">
+                      {formatDate(day.date_event)}
+                    </h1>
+
+                    {/* Period Groups */}
+                    {Object.entries(periodGroups).map(([period, events]) => {
+                      if (events.length === 0) return null;
+
+                      const periodInfo = getPeriodInfo(period, events, day.date_event);
+
+                      return (
+                        <div key={period} className="mb-8">
+
+                          <div className="mx-auto mt-3 w-full max-w-[90vw] xl:max-w-none xl:mx-0 xl:ml-12 mb-4 px-4 xl:px-0">
+                            <h2 className="text-[#37e3f0] bg-clip-text font-bebas text-2xl font-bold xl:text-3xl text-center xl:text-left break-words">
+                              {periodInfo.title}
+                            </h2>
+                          </div>
+
+                          {/* Events in this period */}
+                          {events.map((event, index) => (
+                            <EventCard
+                              key={event.id}
+                              event={event}
+                              isFirst={index === 0}
+                              isLast={index === events.length - 1}
+                            />
+                          ))}
+                        </div>
+                      );
+                    })}
+                  </div>
+                );
+              })
+
             )}
           </div>
         </div>
