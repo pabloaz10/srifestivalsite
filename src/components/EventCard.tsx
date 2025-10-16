@@ -8,6 +8,13 @@ export const EventCard = ({ event, isFirst, isLast }) => {
   const [isSticky, setIsSticky] = useState(false);
   const cardRef = useRef(null);
 
+  // Function to truncate title for mobile display
+  const getTruncatedTitle = (title, maxLength = 80) => {
+    if (!title) return '';
+    if (title.length <= maxLength) return title;
+    return title.substring(0, maxLength).trim() + '...';
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       if (cardRef.current) {
@@ -70,9 +77,16 @@ export const EventCard = ({ event, isFirst, isLast }) => {
           dangerouslySetInnerHTML={{ __html: event.name }}
         />
         {event.title && (
-          <p className="mt-3 mb-4 max-w-[600px] text-center text-lg text-[#0CE8F6] xl:text-left xl:text-base">
-            {event.title}
-          </p>
+          <>
+            {/* Mobile version - truncated */}
+            <p className="mt-3 mb-4 max-w-[600px] text-center text-lg text-[#0CE8F6] xl:hidden">
+              {getTruncatedTitle(event.title)}
+            </p>
+            {/* Desktop version - full text */}
+            <p className="mt-3 mb-4 max-w-[600px] text-left text-base text-[#0CE8F6] hidden xl:block">
+              {event.title}
+            </p>
+          </>
         )}
 
         {/* Botão de cadastro/inscrição quando há link */}
