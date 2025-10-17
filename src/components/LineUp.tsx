@@ -133,7 +133,7 @@ const LineUp = ({ data = [], sponsors = [], filteredLineup = [] }) => {
                 return (
                   <div key={day.id} className="w-full rounded-xl">
                     {/* Day Header */}
-                    <h1 className="sticky top-16 z-30 mx-auto w-max bg-white px-6 py-2 text-center font-bebas text-3xl font-bold text-black xl:mx-0 xl:ml-12 xl:text-left shadow-lg">
+                    <h1 className="sticky top-1 z-30 mx-auto w-max bg-white px-6 py-2 text-center font-bebas text-3xl font-bold text-black xl:mx-0 xl:ml-12 xl:text-left shadow-lg">
                       {formatDate(day.date_event)}
                     </h1>
 
