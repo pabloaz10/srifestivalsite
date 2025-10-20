@@ -89,19 +89,6 @@ export const mockSponsors = [
     status: "published"
   },
   {
-    id: "8",
-    sponsor_name: "Sicredi Dexis",
-    sponsor_image: {
-      id: "d9492f0f-e901-48f3-bfd0-add8142ebd3a",
-      title: "Sicredi Logo"
-    },
-    sponsor_type: {
-      id: "2", 
-      sponsor_type_name: "Patrocinador Ouro"
-    },
-    status: "published"
-  },
-  {
     id: "9",
     sponsor_name: "FAB LAB UEM",
     sponsor_image: {
