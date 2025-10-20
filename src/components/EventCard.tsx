@@ -22,7 +22,7 @@ export const EventCard = ({ event, isFirst, isLast }) => {
         const cardHeight = cardRef.current.clientHeight;
         const scrollPosition = window.scrollY;
 
-        if (scrollPosition > cardTop - 64) {
+        if (scrollPosition > cardTop - 154) {
           setIsSticky(true);
         } else {
           setIsSticky(false);
