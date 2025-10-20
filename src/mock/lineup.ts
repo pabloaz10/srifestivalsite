@@ -80,7 +80,7 @@ export const mockLineup = [
     date: "2025-10-21",
     pic: "/assets/sriatracoes/futuroTrabalho.png",
     bio: "Apresentação das políticas estaduais para fomento da ciência, tecnologia e inovação no Paraná.",
-    title: "José Maurino - Secretário Executivo do SEPARTEC - Duração: 30 minutos",
+    title: "José Maurino - Secretário Executivo do SEPARTEC",
     link: "",
     link_name: "",
     status: "palestra"
@@ -108,6 +108,42 @@ export const mockLineup = [
     link: "https://shre.ink/oN16",
     link_name: "",
     status: "abertura"
+  },
+  {
+    id: "216",
+    name: "Economia Criativa e Bioconstrução: A Alquimia para um Turismo Transformador",
+    time: "15:00:00",
+    date: "2025-10-21",
+    pic: "/assets/sriatracoes/economiaCreativa.png",
+    bio: "Palestra sobre como a economia criativa e bioconstrução podem transformar o turismo, criando experiências sustentáveis e autênticas.",
+    title: "Palestrante: Perseu Bastos - Consultor SEBRAE/PR - Duração: 45 minutos",
+    link: "",
+    link_name: "",
+    status: "palestra"
+  },
+  {
+    id: "217",
+    name: "O Tripé da Oferta Turística: Experiência, Estética e Sustentabilidade na Prática",
+    time: "16:00:00",
+    date: "2025-10-21",
+    pic: "/assets/sriatracoes/ofertaTuristica.png",
+    bio: "Painel prático sobre os três pilares fundamentais da oferta turística moderna: experiência do visitante, estética dos espaços e sustentabilidade ambiental.",
+    title: "Painelistas: Guilherme e Maurício - Duração: 50 minutos",
+    link: "",
+    link_name: "",
+    status: "palestra"
+  },
+  {
+    id: "219",
+    name: "Do Saber Fazer ao Negócio: Cultura e Economia Criativa na Prática",
+    time: "17:00:00",
+    date: "2025-10-21",
+    pic: "/assets/sriatracoes/saberFazer.png",
+    bio: "Painel sobre transformação do conhecimento tradicional em oportunidades de negócio através da economia criativa e valorização cultural.",
+    title: "Painelistas: Susylene e Hector - Duração: 50 minutos",
+    link: "",
+    link_name: "",
+    status: "palestra"
   },
   {
     id: "223",
