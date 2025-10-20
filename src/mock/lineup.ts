@@ -88,7 +88,7 @@ export const mockLineup = [
   {
     id: "215",
     name: "Assinatura do Protocolo de Intenções - Cinturão da Inovação",
-    time: "12:00:00",
+    time: "11:30:00",
     date: "2025-10-21",
     pic: "/assets/sriatracoes/assinatura.webp",
     bio: "Cerimônia de assinatura do protocolo que estabelece o Cinturão da Inovação entre múltiplas cidades do interior do Paraná.",
@@ -112,9 +112,9 @@ export const mockLineup = [
   {
     id: "216",
     name: "Economia Criativa e Bioconstrução: A Alquimia para um Turismo Transformador",
-    time: "15:00:00",
+    time: "14:00:00",
     date: "2025-10-21",
-    pic: "/assets/sriatracoes/economiaCreativa.png",
+    pic: "/assets/sriatracoes/ecoCriativa.webp",
     bio: "Palestra sobre como a economia criativa e bioconstrução podem transformar o turismo, criando experiências sustentáveis e autênticas.",
     title: "Palestrante: Perseu Bastos - Consultor SEBRAE/PR - Duração: 45 minutos",
     link: "",
@@ -124,9 +124,9 @@ export const mockLineup = [
   {
     id: "217",
     name: "O Tripé da Oferta Turística: Experiência, Estética e Sustentabilidade na Prática",
-    time: "16:00:00",
+    time: "15:00:00",
     date: "2025-10-21",
-    pic: "/assets/sriatracoes/ofertaTuristica.png",
+    pic: "/assets/sriatracoes/ofertaTuristica.webp",
     bio: "Painel prático sobre os três pilares fundamentais da oferta turística moderna: experiência do visitante, estética dos espaços e sustentabilidade ambiental.",
     title: "Painelistas: Guilherme e Maurício - Duração: 50 minutos",
     link: "",
@@ -136,9 +136,9 @@ export const mockLineup = [
   {
     id: "219",
     name: "Do Saber Fazer ao Negócio: Cultura e Economia Criativa na Prática",
-    time: "17:00:00",
+    time: "16:00:00",
     date: "2025-10-21",
-    pic: "/assets/sriatracoes/saberFazer.png",
+    pic: "/assets/sriatracoes/culturaEconomia.webp",
     bio: "Painel sobre transformação do conhecimento tradicional em oportunidades de negócio através da economia criativa e valorização cultural.",
     title: "Painelistas: Susylene e Hector - Duração: 50 minutos",
     link: "",
@@ -157,6 +157,30 @@ export const mockLineup = [
     link_name: "",
     status: "abertura"
   },
+  {
+    id: "220",
+    name: "Futuro do Trabalho e IA: Competências para a Nova Economia",
+    time: "11:00:00",
+    date: "2025-10-22",
+    pic: "/assets/sriatracoes/futuroTrabalho.png",
+    bio: "Palestra sobre as competências essenciais que profissionais precisam desenvolver para se adaptar à nova economia impulsionada pela inteligência artificial.",
+    title: "Participante: Jean Karlis",
+    link: "",
+    link_name: "",
+    status: "palestra"
+  },
+  {
+    id: "221",
+    name: "Talking Show: Empreendedorismo Inovador e Startups: Oportunidades na Nova Economia",
+    time: "12:00:00",
+    date: "2025-10-22",
+    pic: "/assets/sriatracoes/talkshow.jpg",
+    bio: "Conversa interativa sobre as oportunidades de empreendedorismo inovador e startups na nova economia digital e tecnológica.",
+    title: "Mediadora: Priscila Andreotti",
+    link: "",
+    link_name: "",
+    status: "palestra"
+  },
   
   {
     id: "223",
@@ -169,6 +193,42 @@ export const mockLineup = [
     link: "https://shre.ink/oVwx",
     link_name: "",
     status: "abertura"
+  },
+  {
+    id: "222",
+    name: "Inovação, Empreendedorismo e Inclusão Digital",
+    time: "15:00:00",
+    date: "2025-10-22",
+    pic: "/assets/sriatracoes/inclusaoDigital.jpeg",
+    bio: "Painel sobre como a inovação e o empreendedorismo podem promover a inclusão digital e democratizar o acesso às tecnologias.",
+    title: "Painelistas: Priscila Andreotti e Stephanie Pivetta",
+    link: "",
+    link_name: "",
+    status: "palestra"
+  },
+  {
+    id: "224",
+    name: "Mulheres que Lideram Negócios Inovadores",
+    time: "16:00:00",
+    date: "2025-10-22",
+    pic: "/assets/sriatracoes/liderancaFeminina.png",
+    bio: "Apresentação de cases de sucesso de mulheres empreendedoras que estão liderando negócios inovadores em diferentes setores.",
+    title: "Palestrantes: Camila – Startup Cuide.me, Camila - Arq2you - Duração: 50 minutos",
+    link: "",
+    link_name: "",
+    status: "palestra"
+  },
+  {
+    id: "225",
+    name: "Mulheres do Agro que Inovam",
+    time: "17:00:00",
+    date: "2025-10-22",
+    pic: "/assets/sriatracoes/mulherAgro.webp",
+    bio: "Painel sobre mulheres que estão transformando o agronegócio através da inovação, sustentabilidade e tecnologia.",
+    title: "Painelistas: Celene - Café Semeado, Jaci - Mãe Lua - Mediadora: Sahra - Duração: 50 minutos",
+    link: "",
+    link_name: "",
+    status: "palestra"
   },
   // atracoes adicionais podem ser adicionadas aqui
 
